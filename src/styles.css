@@ -1,0 +1,774 @@
+/* 🌟 GENERALI */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #009FB7;
+}
+
+/* 🌟 NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #009FB7;
+}
+
+.logo a {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* 🌟 MENU NAVIGAZIONE */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* 🌟 MENU HAMBURGER (MOBILE) */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* 🌟 Pulsante Logout */
+.logout-btn {
+  background-color: #FE4A49;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: #D43F3A;
+  transform: scale(1.05);
+}
+
+.logout-btn:active {
+  transform: scale(0.95);
+}
+
+/* Link Utili */
+.quick-links {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.quick-links h3 {
+  color: #009FB7;
+  font-size: 20px;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  margin: 10px 0;
+}
+
+.quick-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.quick-links a:hover {
+  color: #009FB7;
+}
+
+/* Attività Recenti */
+.recent-activity {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.recent-activity h3 {
+  color: #009FB7;
+  font-size: 20px;
+}
+
+/* 🌟 PROFILO UTENTE */
+.profile-container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-profile-btn {
+  background-color: #009FB7;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.edit-profile-btn:hover {
+  background-color: #007a91;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #FED766;
+}
+
+/* 🌟 Immagine profilo nella pagina profilo */
+.profile-img-large {
+  width: 120px;
+  /* Riduciamo la grandezza */
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #FED766;
+  margin-bottom: 10px;
+}
+
+.profile-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-form label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.profile-form input,
+.profile-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+.update-btn {
+  background: #FE4A49;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.update-btn:hover {
+  background: #D43F3A;
+}
+
+/* 🌟 Messaggi */
+.message {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* 🌟 HERO SECTION */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('./assets/linkupbackground.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding-top: 80px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 159, 183, 0.6);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+}
+
+.cta-button {
+  background-color: #FED766;
+  color: #333;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* 🌟 SEZIONE PUNTI DI FORZA */
+.features {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.features h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.feature {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 300px;
+}
+
+.feature h3 {
+  font-size: 22px;
+  color: #009FB7;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* 🌟 FORM DI AUTENTICAZIONE */
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 15px;
+  color: #009FB7;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 10px;
+  background: #FE4A49;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth-container button:hover {
+  background: #d83734;
+}
+
+/* 🌟 DASHBOARD */
+.dashboard-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.dashboard-profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #FED766;
+}
+
+.dashboard-container h2 {
+  color: #009FB7;
+}
+
+.dashboard-content {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.dashboard-box {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  width: 45%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-box h3 {
+  color: #009FB7;
+}
+
+.dashboard-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-box ul li {
+  background: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Grafico */
+.recent-activity {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activity h3 {
+  color: #009FB7;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.recent-activity .recharts-wrapper {
+  max-width: 100%;
+}
+
+/* 🌟 CHAT */
+.chat-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.messages {
+  height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.sent {
+  background-color: #009FB7;
+  color: white;
+  align-self: flex-end;
+}
+
+.received {
+  background-color: #f4f4f4;
+  color: #333;
+  align-self: flex-start;
+}
+
+.chat-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 8px;
+}
+
+.chat-input button {
+  padding: 8px;
+  background-color: #009FB7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.messages-icon {
+  position: relative;
+  font-size: 24px;
+  text-decoration: none;
+  color: white;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 7px;
+  border-radius: 50%;
+}
+
+.chat-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.messages-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.messages {
+  margin-bottom: 20px;
+}
+
+.message {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.sent {
+  background-color: #009FB7;
+  color: white;
+  align-self: flex-end;
+}
+
+.received {
+  background-color: #e0e0e0;
+  color: #333;
+  align-self: flex-start;
+}
+
+.chat-input {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.chat-input {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.chat-input button {
+  padding: 10px 15px;
+  background-color: #009FB7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.chat-input button:hover {
+  background-color: #007a91;
+  transform: scale(1.05);
+}
+
+.chat-input button:active {
+  transform: scale(0.95);
+}
+
+.chat-input input:focus,
+.chat-input button:focus {
+  outline: none;
+  box-shadow: 0 0 5px #009FB7;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard-box {
+    width: 100%;
+  }
+}
+
+/* 🌟 FOOTER */
+.footer {
+  background-color: #009FB7;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+
+/* 🌟 RESPONSIVE */
+@media (max-width: 768px) {
+
+  /* ✅ MENU MOBILE */
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #009FB7;
+    text-align: center;
+    padding: 15px 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Mostra il menu quando è aperto */
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  /* ✅ HERO SECTION MOBILE */
+  .hero {
+    height: auto;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .content {
+    max-width: 100%;
+  }
+
+  /* ✅ SEZIONE PUNTI DI FORZA MOBILE */
+  .features-grid {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .feature {
+    max-width: 100%;
+  }
+
+  /* ✅ FORM MOBILE */
+  .auth-container {
+    width: 90%;
+  }
+
+  .auth-container input {
+    font-size: 16px;
+  }
+
+  .auth-container button {
+    font-size: 16px;
+  }
+
+  /* ✅ FOOTER MOBILE */
+  .footer {
+    padding: 10px 0;
+  }
+}
+
+/* 🌟 OFFERS PAGE */
+.job-offers-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.job-offers-container h2 {
+  color: #009FB7;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.job-offers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.job-offer {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job-offer h3 {
+  font-size: 20px;
+  color: #009FB7;
+}
+
+.job-offer p {
+  font-size: 16px;
+  color: #333;
+}
+
+.apply-btn {
+  background-color: #009FB7;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.apply-btn:hover {
+  background-color: #007a91;
+}
+
+/* 🌟 FAQ Section */
+.faq-section {
+  background-color: #f4f4f4;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 32px;
+  color: #009FB7;
+  margin-bottom: 30px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item h3 {
+  font-size: 20px;
+  color: #009FB7;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsività FAQ */
+@media (max-width: 768px) {
+  .faq-section h2 {
+    font-size: 28px;
+  }
+
+  .faq-item h3 {
+    font-size: 18px;
+  }
+
+  .faq-item p {
+    font-size: 14px;
+  }
+}
